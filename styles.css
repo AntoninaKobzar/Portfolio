@@ -1,10 +1,10 @@
 :root {
   --color1: #654f88;
   --color2: #34262a;
-  --color3: #b5a59b;
+  --color3: #8fbc8f;
   --color4: #513e6f;
   --color5: #c3c4b4;
-  --accent_color1: #caccc9;
+  --accent_color1: #f0fff0;
   --accent_color2: #8c6959;
 }
 @font-face {
@@ -24,9 +24,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--accent_color1);
+  /* background: linear-gradient(
+    90deg,
+    rgba(143, 188, 143, 1) 37%,
+    rgba(240, 255, 240, 0.8577556022408963) 100%
+  ); */
 }
 
 header {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +44,14 @@ header {
 .logo {
   font-family: "BadScript";
   font-size: 24px;
+  font-weight: 600;
   color: var(--color4);
+}
+.logo:hover {
+  color: #8fbc8f;
+}
+.logo_sign {
+  text-decoration: none;
 }
 
 nav ul {
@@ -67,6 +80,9 @@ nav ul li a {
   color: var(--color4);
   font-weight: bold;
 }
+nav ul li a:hover {
+  color: #8fbc8f;
+}
 
 main {
   padding: 20px;
@@ -77,47 +93,112 @@ main {
   justify-content: space-between;
   padding: 20px 0;
 }
+.about {
+  display: flex;
+  align-items: center;
+  margin: 16px 150px;
+  gap: 32px;
+  font-family: "Mooli";
+  font-weight: 400;
+  font-size: 18px;
+}
+.about_title {
+  color: var(--color1);
+  font-size: 56px;
+}
+.my_info {
+  flex-direction: column;
+}
+.my_photo {
+  max-width: 420px;
+  border: 2px solid var(--color3);
+  border-radius: 50%;
+}
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 1px solid var(--accent_color2);
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: var(--color1);
+  /* justify-content: center; */
+
+  background: linear-gradient(
+    90deg,
+    rgba(143, 188, 143, 1) 37%,
+    rgba(240, 255, 240, 0.8577556022408963) 100%
+  );
 }
-.circle:first-child {
-  background-color: var(--accent_color2);
-}
-.circle:last-child {
-  background-color: var(--color5);
+.circle:hover {
+  background: var(--color1);
+  color: var(--accent_color1);
 }
 
 .circle a {
-  color: white;
+  padding: 30px;
+  color: var(--color2);
+  font-weight: 600;
   text-decoration: none;
+}
+.circle a:hover {
+  color: var(--accent_color1);
 }
 
 footer {
-  background-color: #333;
-  color: white;
+  color: var(--color2);
   padding: 20px;
 }
+footer::before {
+  content: " ";
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  height: 1px;
 
-.footer-links,
-.social-links {
+  background-color: var(--color3);
+}
+.link_title {
+  font-family: "Mooli";
+  font-size: 18px;
+  font-weight: 700;
+}
+.contacts {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
-  padding: 0;
+  align-items: center;
 }
-
-.footer-links li,
-.social-links li {
-  margin-bottom: 10px;
-}
-
-.social-links a {
-  color: white;
+.link {
+  color: var(--color2);
   text-decoration: none;
+}
+.link:hover {
+  color: var(--accent_color2);
+}
+.icon {
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  fill: #0096ff;
+}
+.icon:hover {
+  fill: grey;
+}
+/* projects */
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Mooli";
+  font-size: 18px;
+  font-weight: 400;
+  list-style: none;
+  cursor: pointer;
+}
+.project_img {
+  width: 300px;
+  height: 200px;
 }

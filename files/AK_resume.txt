@@ -1,0 +1,58 @@
+                                Antonina Kobzar
+                                Junior Full-Stack Developer
+
+
+                                About Me
+
+                                I am a highly motivated junior front-end developer with
+                                knowledge of HTML, CSS, JavaScript, and React. I am
+Contacts                        responsible, punctual always ready to learn and gain
+                                new experiences. Challenging tasks make work more
+                                valuable to me. My goal is to be creative, efficient, and
+                                useful for my team and company.
+   antonina.kobzar@gmail.com
+
+   +380 099 720 52 09
+                                Project Experience
+   Linkedin
+
+    Telegram
+                                News Site GitHub-repository
+                                [HTML, SASS, JS, Parcel]
+Tech Skills                     A website with a responsive layout. Role:
+                                Developer.
+  HTML & CSS
+  JavaScript                    Phonebook GitHub-repository
+  TypeScript                    [React (Hooks, Routers, Redux, Redux Toolkit]
+  Git
+                                A simple phonebook connected to Swagger
+  Frameworks and Libraries
+  Responsive Design             backend API - you can register, log in, add,
+                                remove or filter contacts, log out. Role: Developer.
+Soft Skills
+                                Restaurant-hotel complex MIMINO
+  Creativity                    GitHub-repository
+  Teamwork                      [Parcel, SCSS, JS] website with responsive layout,
+  Communication
+                                burger menu, modal window, and attractive
+  Multi-tasking
+                                design. Role: Developer
+
+Languages                       Education
+
+ English - Upper-Intermediate
+                                  GoIT courses
+                                  Full-Stack developer
+ Ukrainian - Native
+                                  Completed in 2023
+
+                                  Nizhyn Mykola Gogol State University
+                                  English Language and Literature
+                                  Completed in 2005
+
+                                  Classical Professional College of Konotop
+
+                                  Construction and operation of buildings
+                                  and facilities
+                                  Completed in 2000
+
