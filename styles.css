@@ -1,0 +1,123 @@
+:root {
+  --color1: #654f88;
+  --color2: #34262a;
+  --color3: #b5a59b;
+  --color4: #513e6f;
+  --color5: #c3c4b4;
+  --accent_color1: #caccc9;
+  --accent_color2: #8c6959;
+}
+@font-face {
+  font-family: "BadScript";
+  src: url("./fonts/BadScript-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mooli";
+  src: url("./fonts/Mooli-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent_color1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Mooli";
+  /* background-color: #f0f0f0; */
+  padding: 10px 20px;
+}
+
+.logo {
+  font-family: "BadScript";
+  font-size: 24px;
+  color: var(--color4);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+nav ul li:not(:last-child) {
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--color4);
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+#circles {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--accent_color2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color1);
+}
+.circle:first-child {
+  background-color: var(--accent_color2);
+}
+.circle:last-child {
+  background-color: var(--color5);
+}
+
+.circle a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-links,
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.social-links li {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
