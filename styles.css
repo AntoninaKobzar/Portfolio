@@ -24,11 +24,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--accent_color1);
-  /* background: linear-gradient(
-    90deg,
-    rgba(143, 188, 143, 1) 37%,
-    rgba(240, 255, 240, 0.8577556022408963) 100%
-  ); */
 }
 
 header {
@@ -37,7 +32,6 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Mooli";
-  /* background-color: #f0f0f0; */
   padding: 10px 20px;
 }
 
@@ -47,11 +41,13 @@ header {
   font-weight: 600;
   color: var(--color4);
 }
-.logo:hover {
-  color: #8fbc8f;
-}
+
 .logo_sign {
   text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+.logo_sign:hover {
+  color: var(--color3);
 }
 
 nav ul {
@@ -79,24 +75,42 @@ nav ul li a {
   text-decoration: none;
   color: var(--color4);
   font-weight: bold;
+  transition: color 250ms ease-in-out;
 }
 nav ul li a:hover {
   color: #8fbc8f;
 }
 
-main {
+/* main {
   padding: 20px;
+} */
+.my_technologies {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  border: 1px dashed var(--color3);
 }
-
-#circles {
+.technologies {
+  font-weight: 100;
+  font-size: 16px;
+  color: var(--color2);
+}
+.can_use {
+  color: var(--color4);
+  white-space: pre;
+  font-weight: bold;
+}
+/* #circles {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-}
+} */
 .about {
   display: flex;
-  align-items: center;
-  margin: 16px 150px;
+  align-items: flex-start;
+  margin: 16px 80px;
   gap: 32px;
   font-family: "Mooli";
   font-weight: 400;
@@ -115,14 +129,14 @@ main {
   border-radius: 50%;
 }
 
-.circle {
+/* .circle {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   border: 1px solid var(--accent_color2);
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  transition: background-color 250ms ease-in-out;
 
   background: linear-gradient(
     90deg,
@@ -140,10 +154,11 @@ main {
   color: var(--color2);
   font-weight: 600;
   text-decoration: none;
+  transition: color 250ms ease-in-out;
 }
 .circle a:hover {
   color: var(--accent_color1);
-}
+} */
 
 footer {
   color: var(--color2);
@@ -173,6 +188,7 @@ footer::before {
 .link {
   color: var(--color2);
   text-decoration: none;
+  transition: color 250ms ease-in-out;
 }
 .link:hover {
   color: var(--accent_color2);
@@ -182,6 +198,7 @@ footer::before {
   justify-content: center;
   margin-right: 5px;
   fill: #0096ff;
+  transition: fill 250ms ease-in-out;
 }
 .icon:hover {
   fill: grey;
@@ -189,7 +206,8 @@ footer::before {
 /* projects */
 .project {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: space-around;
   align-items: center;
   font-family: "Mooli";
@@ -198,7 +216,28 @@ footer::before {
   list-style: none;
   cursor: pointer;
 }
+.project_card {
+  background: linear-gradient(
+    90deg,
+    rgba(143, 188, 143, 1) 37%,
+    rgba(240, 255, 240, 0.8577556022408963) 100%
+  );
+  padding: 12px;
+
+  border: 1px solid var(--color3);
+  border-radius: 8px;
+  transition: scale 250ms ease-in-out;
+}
+.project_card:hover {
+  scale: 1.1;
+}
 .project_img {
+  border: 1px solid var(--accent_color1);
+  border-radius: 2px;
   width: 300px;
-  height: 200px;
+  height: 150px;
+}
+.project_title {
+  text-decoration: none;
+  color: var(--color2);
 }
