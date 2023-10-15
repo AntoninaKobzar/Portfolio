@@ -12,29 +12,46 @@
         <a class="logo_sign" href="./index.html">Antonina Kobzar</a>
       </div>
       <nav>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="./files/AK_resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="#contact">Contacts</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./files/AK_resume.pdf" target="_blank"
+              >Resume</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li> -->
         </ul>
       </nav>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleNavigation()">&#9776;</div>
+      <div class="mobile-menu">
+        <div class="mobile-icon" onclick="toggleNavigation()">&#9776;</div>
       </div>
       <div id="modal" class="modal">
         <div class="modal-content">
           <span class="close" onclick="toggleModal()">&times;</span>
-          <nav class="burger_nav">
-            <ul class="burger_list">
-              <li class="burger_item"><a href="./">Home</a></li>
-              <li class="burger_item">
-                <a href="./files/AK_resume.pdf" target="_blank">Resume</a>
+          <nav class="burger-nav">
+            <ul class="burger-list">
+              <li class="burger-item">
+                <a class="burger-link" href="./">Home</a>
               </li>
-              <li class="burger_item">
-                <a href="./projects.html">Projects</a>
+              <li class="burger-item">
+                <a
+                  class="burger-link"
+                  href="./files/AK_resume.pdf"
+                  target="_blank"
+                  >Resume</a
+                >
               </li>
-              <li class="burger_item"><a href="#contact">Contacts</a></li>
+              <li class="burger-item">
+                <a class="burger-link" href="./projects.html">Projects</a>
+              </li>
+              <!-- <li class="burger-item">
+                <a class="burger-link" href="#contact">Contacts</a>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -42,36 +59,39 @@
     </header>
 
     <main>
-      <section class="about" id="about">
-        <img class="my_photo" src="./images/myphoto.JPG" alt="My Photo" />
-        <div class="my_info">
-          <h2 class="about_title">About me</h2>
-          <div class="my_technologies">
-            <code class="technologies"
-              >const <span class="can_use"> canUse </span>=
-              ['HTML','CSS','SASS', 'Responsive/Adaptive design',
-              'JavaScript','Typescript','React','Redux',
-              'Node.js','Express.js','MongoDB','Git','RestAPI', 'Postman']</code
-            >
-          </div>
-          <p>
-            I am a <b>highly motivated</b> junior front-end developer with
-            knowledge of <b>HTML, CSS, JavaScript,</b> and <b>React</b>. I am
-            responsible, punctual always ready to learn and gain new
-            experiences. Challenging tasks make work more valuable to me. My
-            goal is to be creative, efficient, and useful for my team and
-            company.
-          </p>
+      <div class="container">
+        <section class="about" id="about">
+          <img class="my_photo" src="./images/myphoto.JPG" alt="My Photo" />
+          <div class="my_info">
+            <h2 class="about_title">About me</h2>
+            <div class="my-technologies">
+              <code class="technologies"
+                >const <span class="can_use"> canUse </span>=
+                ['HTML','CSS','SASS', 'Responsive/Adaptive design',
+                'JavaScript','Typescript','React','Redux',
+                'Node.js','Express.js','MongoDB','Git','RestAPI',
+                'Postman']</code
+              >
+            </div>
+            <p>
+              I am a <b>highly motivated</b> junior front-end developer with
+              knowledge of <b>HTML, CSS, JavaScript,</b> and <b>React</b>. I am
+              responsible, punctual always ready to learn and gain new
+              experiences. Challenging tasks make work more valuable to me. My
+              goal is to be creative, efficient, and useful for my team and
+              company.
+            </p>
 
-          <!-- <ul id="circles">
+            <!-- <ul id="circles">
             <li class="circle">
               <a href="./files/AK_resume.pdf" target="_blank">Resume</a>
             </li>
             <li class="circle"><a href="./projects.html">Projects</a></li>
             <li class="circle"><a href="#contact">Contact</a></li>
           </ul> -->
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -90,17 +110,18 @@
           <li>
             <p class="link_title">Follow Me</p>
             <a class="link" href="https://t.me/AntoninaKobzar"
-              ><svg class="icon" width="24" height="24">
+              ><svg class="icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-telegram" /></svg
             ></a>
             <a class="link" href="https://www.linkedin.com/in/yourlinkedin"
-              ><svg class="icon" width="24" height="24">
+              ><svg class="icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-linkedin" /></svg
             ></a>
           </li>
         </ul>
       </div>
     </footer>
+
     <script>
       function toggleModal() {
         const modal = document.getElementById("modal");

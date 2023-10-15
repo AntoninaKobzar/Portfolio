@@ -7,32 +7,34 @@
     <title>My Website</title>
   </head>
   <body>
-    <header>
+    <header> 
       <div class="logo">
         <a class="logo_sign" href="./index.html">Antonina Kobzar</a>
       </div>
       <nav>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="./files/AK_resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="#contact">Contacts</a></li>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./files/AK_resume.pdf" target="_blank">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li> -->
         </ul>
       </nav>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleNavigation()">&#9776;</div>
+      <div class="mobile-menu">
+        <div class="mobile-icon" onclick="toggleNavigation()">&#9776;</div>
       </div>
       <div id="modal" class="modal">
         <div class="modal-content">
           <span class="close" onclick="toggleModal()">&times;</span>
-          <nav>
-            <ul>
-              <li><a href="./">Home</a></li>
-              <li>
-                <a href="./files/AK_resume.pdf" target="_blank">Resume</a>
+          <nav class="burger-nav">
+            <ul class="burger-list">
+              <li class="burger-item"><a class="burger-link"  href="./">Home</a></li>
+              <li class="burger-item">
+                <a class="burger-link"  href="./files/AK_resume.pdf" target="_blank">Resume</a>
               </li>
-              <li><a href="./projects.html">Projects</a></li>
-              <li><a href="#contact">Contacts</a></li>
+              <li class="burger-item">
+                <a class="burger-link"  href="./projects.html">Projects</a>
+              </li>
+              <!-- <li class="burger-item"><a class="burger-link"  href="#contact">Contacts</a></li> -->
             </ul>
           </nav>
         </div>
@@ -40,9 +42,23 @@
     </header>
 
     <main>
+      <div class="container">
       <ul class="project">
         <li>
-          <div class="project_card">
+          <div class="card">
+            <div class="card_overlay">
+              <p class="overlay_text">Used:['Bootstrap','HTML','CSS']</p>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View in browser</a></button>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View on GitHub<a/></button>
+            </div>
             <a
               class="project_title"
               href="https://antoninakobzar.github.io/VaniaAlbum/"
@@ -55,7 +71,20 @@
           </div>
         </li>
         <li>
-          <div class="project_card">
+         <div class="card">
+            <div class="card_overlay">
+              <p class="overlay_text">Used:[]</p>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View in browser</a></button>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View on GitHub<a/></button>
+            </div>
             <a
               class="project_title"
               href="https://antoninakobzar.github.io/VaniaAlbum/"
@@ -63,12 +92,25 @@
               ><img
                 class="project_img"
                 src="./images/p1.jpg"
-              /><br /><br />Project2</a
+              /><br /><br />VaniaAlbum</a
             >
           </div>
         </li>
         <li>
-          <div class="project_card">
+          <div class="card">
+            <div class="card_overlay">
+              <p class="overlay_text">Used:[]</p>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View in browser</a></button>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View on GitHub<a/></button>
+            </div>
             <a
               class="project_title"
               href="https://antoninakobzar.github.io/VaniaAlbum/"
@@ -76,12 +118,25 @@
               ><img
                 class="project_img"
                 src="./images/p1.jpg"
-              /><br /><br />Project3</a
+              /><br /><br />VaniaAlbum</a
             >
           </div>
         </li>
         <li>
-          <div class="project_card">
+          <div class="card">
+            <div class="card_overlay">
+              <p class="overlay_text">Used:[]</p>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View in browser</a></button>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View on GitHub<a/></button>
+            </div>
             <a
               class="project_title"
               href="https://antoninakobzar.github.io/VaniaAlbum/"
@@ -89,12 +144,25 @@
               ><img
                 class="project_img"
                 src="./images/p1.jpg"
-              /><br /><br />Project4</a
+              /><br /><br />VaniaAlbum</a
             >
           </div>
         </li>
         <li>
-          <div class="project_card">
+         <div class="card">
+            <div class="card_overlay">
+              <p class="overlay_text">Used:[]</p>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View in browser</a></button>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View on GitHub<a/></button>
+            </div>
             <a
               class="project_title"
               href="https://antoninakobzar.github.io/VaniaAlbum/"
@@ -102,12 +170,25 @@
               ><img
                 class="project_img"
                 src="./images/p1.jpg"
-              /><br /><br />Project5</a
+              /><br /><br />VaniaAlbum</a
             >
           </div>
         </li>
         <li>
-          <div class="project_card">
+          <div class="card">
+            <div class="card_overlay">
+              <p class="overlay_text">Used:[]</p>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View in browser</a></button>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View on GitHub<a/></button>
+            </div>
             <a
               class="project_title"
               href="https://antoninakobzar.github.io/VaniaAlbum/"
@@ -115,12 +196,25 @@
               ><img
                 class="project_img"
                 src="./images/p1.jpg"
-              /><br /><br />Project6</a
+              /><br /><br />VaniaAlbum</a
             >
           </div>
         </li>
         <li>
-          <div class="project_card">
+          <div class="card">
+            <div class="card_overlay">
+              <p class="overlay_text">Used:[]</p>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View in browser</a></button>
+              <button class="overlay_button"><a
+              class="project_title"
+              href="https://antoninakobzar.github.io/VaniaAlbum/"
+              target="_blank"
+              >View on GitHub<a/></button>
+            </div>
             <a
               class="project_title"
               href="https://antoninakobzar.github.io/VaniaAlbum/"
@@ -128,13 +222,14 @@
               ><img
                 class="project_img"
                 src="./images/p1.jpg"
-              /><br /><br />Project7</a
+              /><br /><br />VaniaAlbum</a
             >
           </div>
         </li>
       </ul>
+       </div>
     </main>
-
+    
     <footer>
       <div id="contact">
         <ul class="contacts">
@@ -151,17 +246,18 @@
           <li>
             <p class="link_title">Follow Me</p>
             <a class="link" href="https://t.me/AntoninaKobzar"
-              ><svg class="icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-telegram" /></svg
-            ></a>
-            <a class="link" href="https://www.linkedin.com/in/yourlinkedin"
+            ><svg class="icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-telegram" /></svg
+              ></a>
+              <a class="link" href="https://www.linkedin.com/in/yourlinkedin"
               ><svg class="icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-linkedin" /></svg
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+     
     <script>
       function toggleModal() {
         var modal = document.getElementById("modal");

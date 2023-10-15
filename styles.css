@@ -20,10 +20,34 @@
   font-style: normal;
   font-weight: normal;
 }
+/* .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */
 body {
   margin: 0;
   padding: 0;
   background-color: var(--accent_color1);
+}
+
+header {
+  padding: 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
 }
 
 header {
@@ -32,17 +56,11 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Mooli";
-  padding: 10px 20px;
 }
-/* section { */
-/* width: 100%;
-  height: 100%; */
-/* overflow: hidden; */
-/* padding: 30px 50px; */
-/* } */
+
 .logo {
   font-family: "BadScript";
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--color4);
 }
@@ -55,38 +73,38 @@ header {
   color: var(--color3);
 }
 
-nav ul {
+.nav-list {
   list-style: none;
   padding: 0;
   margin-right: 50px;
 }
 
-nav ul li {
+.nav-item {
   display: inline-block;
   margin-left: 20px;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
-nav ul li:first-child {
+.nav-item :first-child {
   margin-left: 0;
 }
-nav ul li:not(:last-child) {
+.nav-item :not(:last-child) {
   border-right: 1px solid black;
   padding-right: 20px;
 }
 
-nav ul li a {
+.nav-link {
   text-decoration: none;
   color: var(--color4);
   font-weight: bold;
   transition: color 250ms ease-in-out;
 }
-nav ul li a:hover {
+.nav-link:hover {
   color: #8fbc8f;
 }
 
-.hamburger-menu {
+.mobile-menu {
   display: none;
 }
 .modal {
@@ -104,9 +122,8 @@ nav ul li a:hover {
 }
 
 .modal-content {
-  /* width: 100%; */
   height: 90vh;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: var(--accent_color1);
   margin: 5% auto;
   padding: 20px;
@@ -127,144 +144,79 @@ nav ul li a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-.burger_nav {
+.burger-nav {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
-.burger_list {
+.burger-list {
   display: flex;
   flex-direction: column;
 }
-.burger_item {
+.burger-item {
   color: var(--color2);
   border-color: transparent;
+  list-style: none;
+  margin-bottom: 12px;
+  font-family: "Mooli";
+  font-size: 18px;
+  font-weight: 600;
 }
 
-/* .hamburger-icon {
-  font-size: 24px;
+.burger-link {
   cursor: pointer;
-}
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
   text-decoration: none;
-  cursor: pointer;
-} */
-/* main {
-  padding: 20px;
-} */
-.my_technologies {
+}
+.burger-link:hover {
+  color: var(--color3);
+}
+
+.my-technologies {
   display: flex;
-  justify-content: flex-start;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   background-color: whitesmoke;
   border-radius: 12px;
+  font-size: 8px;
   border: 1px dashed var(--color3);
-}
-.technologies {
-  font-weight: 100;
-  font-size: 16px;
-  color: var(--color2);
 }
 .can_use {
   color: var(--color4);
   white-space: pre;
   font-weight: bold;
 }
-/* #circles {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-} */
+
 .about {
-  display: flex;
-  align-items: flex-start;
-  width: 100vh;
-  height: 100%;
-  padding: 20px 20px;
-  gap: 32px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   font-family: "Mooli";
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 .about_title {
+  display: flex;
+  justify-content: center;
   color: var(--color1);
-  font-size: 56px;
+  font-size: 26px;
 }
 .my_info {
   flex-direction: column;
 }
 .my_photo {
-  max-width: 420px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100px;
   border: 2px solid var(--color3);
   border-radius: 50%;
 }
 
-/* .circle {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 1px solid var(--accent_color2);
-  display: flex;
-  align-items: center;
-  transition: background-color 250ms ease-in-out;
-
-  background: linear-gradient(
-    90deg,
-    rgba(143, 188, 143, 1) 37%,
-    rgba(240, 255, 240, 0.8577556022408963) 100%
-  );
-}
-.circle:hover {
-  background: var(--color1);
-  color: var(--accent_color1);
-}
-
-.circle a {
-  padding: 30px;
-  color: var(--color2);
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 250ms ease-in-out;
-}
-.circle a:hover {
-  color: var(--accent_color1);
-} */
-
 footer {
   color: var(--color2);
-  padding: 20px;
+  width: 100%;
 }
 footer::before {
   content: " ";
@@ -278,12 +230,15 @@ footer::before {
 }
 .link_title {
   font-family: "Mooli";
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 600;
 }
 .contacts {
+  padding: 0;
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  font-size: 10px;
   list-style: none;
   align-items: center;
 }
@@ -305,12 +260,14 @@ footer::before {
 .icon:hover {
   fill: grey;
 }
+
 /* projects */
 .project {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-family: "Mooli";
   font-size: 18px;
@@ -318,7 +275,7 @@ footer::before {
   list-style: none;
   cursor: pointer;
 }
-.project_card {
+.card {
   background: linear-gradient(
     90deg,
     rgba(143, 188, 143, 1) 37%,
@@ -328,11 +285,56 @@ footer::before {
 
   border: 1px solid var(--color3);
   border-radius: 8px;
+
   transition: scale 250ms ease-in-out;
 }
-.project_card:hover {
+.card:hover {
   scale: 1.1;
 }
+.card_overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  font-family: "Mooli";
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  color: var(--color2);
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.card:hover .card_overlay {
+  display: flex;
+  transform: translateY(0);
+}
+.overlay_text {
+  padding: 0;
+  margin: 0;
+  font-family: "Mooli";
+  font-size: 14px;
+  font-weight: 400;
+}
+.overlay_button {
+  padding: 12px;
+  cursor: pointer;
+  background-color: var(--color3);
+  border-radius: 2px;
+  border: 1px solid var(--color3);
+}
+.overlay_button:hover {
+  background-color: var(--accent_color1);
+  color: var(--color1);
+}
+
 .project_img {
   border: 1px solid var(--accent_color1);
   border-radius: 2px;
@@ -343,42 +345,54 @@ footer::before {
   text-decoration: none;
   color: var(--color2);
 }
+@media (max-width: 379px) {
+  header,
+  footer {
+    padding: 10px;
+  }
 
-/* Media query for mobile devices */
-@media (max-width: 767px) {
-  nav ul {
+  .container {
+    padding: 10px;
+  }
+  .nav-list {
     display: none;
   }
-
-  nav ul.show {
-    display: block;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-
-  .logo {
-    font-size: 14px;
-  }
-  section {
+  .mobile-menu {
     display: flex;
-    flex-direction: column;
-    width: 100%; /* Adjust width for smaller screens */
-    height: auto; /* Allow content to dictate height */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  header,
+  footer {
+    padding: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  header,
+  footer {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  header,
+  footer {
+    padding: 30px;
+  }
+
+  .container {
+    padding: 30px;
   }
   .my_photo {
-    max-width: 100px;
-  }
-  body {
-    font-size: 14px;
-  }
-  .about_title {
-    font-size: 24px;
-  }
-  .hamburger-icon {
-    font-size: 24px;
-    cursor: pointer;
+    width: 420px;
   }
 }
