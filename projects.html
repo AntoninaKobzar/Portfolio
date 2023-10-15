@@ -19,6 +19,24 @@
           <li><a href="#contact">Contacts</a></li>
         </ul>
       </nav>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleNavigation()">&#9776;</div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="toggleModal()">&times;</span>
+          <nav>
+            <ul>
+              <li><a href="./">Home</a></li>
+              <li>
+                <a href="./files/AK_resume.pdf" target="_blank">Resume</a>
+              </li>
+              <li><a href="./projects.html">Projects</a></li>
+              <li><a href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -144,5 +162,19 @@
         </ul>
       </div>
     </footer>
+    <script>
+      function toggleModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display =
+          modal.style.display === "none" || modal.style.display === ""
+            ? "block"
+            : "none";
+      }
+      function toggleNavigation() {
+        var nav = document.querySelector("nav ul");
+        nav.classList.toggle("show");
+        toggleModal();
+      }
+    </script>
   </body>
 </html>
